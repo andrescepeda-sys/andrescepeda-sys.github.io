@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Misión y Visión | Outline</title>
+    <title>Misión, Visión y Valores | Outline</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,51 +15,132 @@
             text-align: center;
             color: #1e293b;
         }
-        .grid {
+        .subtitulo {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 40px;
+        }
+        .grid-mv {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-top: 40px;
+            margin-bottom: 60px;
         }
-        .card {
+        .card-mv {
             background: white;
             padding: 30px;
             border-radius: 16px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        .card h2 {
+        .card-mv h2 {
             color: #1e293b;
             margin-top: 0;
         }
-        .card p {
+        .card-mv p {
             line-height: 1.6;
             color: #475569;
         }
+        .valores-titulo {
+            text-align: center;
+            margin: 40px 0 30px;
+        }
+        .valores-titulo h2 {
+            color: #1e293b;
+            border-bottom: 3px solid #1e293b;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .grid-valores {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card-valor {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .card-valor h3 {
+            color: #1e293b;
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .card-valor p {
+            color: #475569;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
         .volver {
             display: inline-block;
-            margin-top: 40px;
+            margin-top: 50px;
             color: #3498db;
             text-decoration: none;
         }
-        @media (max-width: 700px) {
-            .grid {
+        @media (max-width: 800px) {
+            .grid-valores {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .grid-mv {
+                grid-template-columns: 1fr;
+            }
+            .grid-valores {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Misión · Visión</h1>
+    <h1>Misión · Visión · Valores</h1>
+    <div class="subtitulo">Lo que nos mueve, hacia dónde vamos y cómo trabajamos</div>
     
-    <div class="grid">
-        <div class="card">
+    <div class="grid-mv">
+        <div class="card-mv">
             <h2>🎯 Misión</h2>
             <p>Impulsar el crecimiento de negocios en Chile a través de estrategias de comunicación digital claras, accesibles y efectivas, acompañando a emprendedores y empresas en la creación, gestión y optimización de sus canales digitales, junto con la producción de contenido que conecte auténticamente con sus audiencias.</p>
         </div>
         
-        <div class="card">
+        <div class="card-mv">
             <h2>👁️ Visión</h2>
             <p>Ser una agencia referente en Chile en el desarrollo de presencia digital para pequeñas y medianas empresas, reconocida por transformar negocios sin experiencia en redes sociales en marcas visibles, competitivas y relevantes en el entorno digital.</p>
+        </div>
+    </div>
+    
+    <div class="valores-titulo">
+        <h2>Nuestros Valores</h2>
+    </div>
+    
+    <div class="grid-valores">
+        <div class="card-valor">
+            <h3>🤝 Cercanía</h3>
+            <p>Trabajamos desde la empatía, entendiendo la realidad de cada cliente y adaptándonos a su nivel de conocimiento digital.</p>
+        </div>
+        
+        <div class="card-valor">
+            <h3>💡 Claridad</h3>
+            <p>Simplificamos lo complejo. Traducimos el mundo digital en acciones concretas, entendibles y aplicables.</p>
+        </div>
+        
+        <div class="card-valor">
+            <h3>📈 Compromiso con el crecimiento</h3>
+            <p>Nos involucramos en los objetivos de nuestros clientes como propios, buscando resultados reales y sostenibles.</p>
+        </div>
+        
+        <div class="card-valor">
+            <h3>🎨 Creatividad estratégica</h3>
+            <p>No solo creamos contenido atractivo, sino que cada pieza responde a un objetivo claro dentro de una estrategia.</p>
+        </div>
+        
+        <div class="card-valor">
+            <h3>🔍 Transparencia</h3>
+            <p>Comunicamos procesos, resultados y expectativas de manera honesta, generando relaciones de confianza a largo plazo.</p>
+        </div>
+        
+        <div class="card-valor">
+            <h3>🔄 Adaptabilidad</h3>
+            <p>Entendemos que cada negocio es distinto, por lo que ofrecemos soluciones flexibles y a medida.</p>
         </div>
     </div>
     
