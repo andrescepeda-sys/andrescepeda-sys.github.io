@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta de Producto</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Este es el componente que puedes copiar a WordPress */
+        .tarjeta {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+        
+        .precio {
+            color: #e74c3c;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        button {
+            background: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <h3>Producto Destacado</h3>
+        <p>Este es un componente que diseñé en GitHub</p>
+        <div class="precio">$29.99</div>
+        <button onclick="alert('En WordPress, esto añadiría al carrito')">
+            Comprar ahora
+        </button>
+        <p style="font-size: 12px; margin-top: 15px;">
+            <strong>¿Cómo pasar a WordPress?</strong><br>
+            Copia este HTML y pégalo en un bloque "HTML personalizado"
+        </p>
+    </div>
+</body>
+</html>
