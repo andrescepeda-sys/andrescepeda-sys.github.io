@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Prueba</title>
+    <meta charset="UTF-8">
+    <title>Misión y Visión | Outline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #1e293b;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #1e293b;
+            margin-top: 0;
+        }
+        .card p {
+            line-height: 1.6;
+            color: #475569;
+        }
+        .volver {
+            display: inline-block;
+            margin-top: 40px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Funciona!</h1>
-    <p>Si ves esto, el archivo se creó correctamente.</p>
-    <a href="index.html">Volver al inicio</a>
+    <h1>Misión · Visión</h1>
+    
+    <div class="grid">
+        <div class="card">
+            <h2>🎯 Misión</h2>
+            <p>Impulsar el crecimiento de negocios en Chile a través de estrategias de comunicación digital claras, accesibles y efectivas, acompañando a emprendedores y empresas en la creación, gestión y optimización de sus canales digitales, junto con la producción de contenido que conecte auténticamente con sus audiencias.</p>
+        </div>
+        
+        <div class="card">
+            <h2>👁️ Visión</h2>
+            <p>Ser una agencia referente en Chile en el desarrollo de presencia digital para pequeñas y medianas empresas, reconocida por transformar negocios sin experiencia en redes sociales en marcas visibles, competitivas y relevantes en el entorno digital.</p>
+        </div>
+    </div>
+    
+    <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>
