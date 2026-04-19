@@ -2,30 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <title>Andrés Cepeda - Laboratorio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background-color: #f0f2f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
         h1 {
-            color: #2c3e50;
+            color: #333;
         }
-        button {
-            background-color: #3498db;
+        .boton {
+            display: inline-block;
+            background: #3498db;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 15px 30px;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .boton:hover {
+            background: #2980b9;
+        }
+        .boton-outline {
+            background: #2c3e50;
+        }
+        .boton-outline:hover {
+            background: #1a252f;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola! Soy Andrés</h1>
-    <p>Este es mi repositorio de componentes</p>
-    <button onclick="alert('¡Funciona!')">Haz clic aquí</button>
+    <div class="container">
+        <h1>🧪 Laboratorio de Componentes</h1>
+        <p>Acá voy a practicar componentes que luego pasaré a WordPress</p>
+        
+        <h2>📁 Mis pruebas:</h2>
+        
+        <a href="index.html" class="boton">🏠 Inicio</a>
+        <a href="mvv.html" class="boton boton-outline">📌 Misión, Visión y Valores</a>
+        
+        <p style="margin-top: 30px; font-size: 14px; color: #666;">
+            👆 Haz clic en "Misión, Visión y Valores"
+        </p>
+    </div>
 </body>
 </html>
